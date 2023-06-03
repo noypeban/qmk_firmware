@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_J,    KC_K,    KC_L, JP_SCLN, JP_COLN,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      MT(MOD_LSFT, KC_ESC),   KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, JP_COMM,  JP_DOT, JP_SLSH, LM(1, MOD_LCTL|MOD_LGUI),
+      MT(MOD_LSFT, KC_ESC),   KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,             KC_N,    KC_M, JP_COMM,  JP_DOT, JP_SLSH, LM(1, MOD_LCTL|MOD_LGUI),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                      KC_LALT, LT(1, KC_ENT), KC_SPC,     KC_ENT, MO(2), RSFT_T(JP_HENK)
                                       //`--------------------------'  `--------------------------'
@@ -37,9 +37,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
    LALT(KC_LCTL), KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCTL, KC_KP_0, KC_KP_1, KC_KP_2, KC_KP_3, KC_KP_4,                      KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX, XXXXXXX,
+      KC_LCTL, KC_KP_0, KC_KP_1, KC_KP_2, KC_KP_3, KC_KP_4,                      KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT,KC_GRAVE, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, KC_KP_5, KC_KP_6, KC_KP_7, KC_KP_8, KC_KP_9,                        KC_F3,   KC_F5, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+      KC_LSFT, KC_KP_5, KC_KP_6, KC_KP_7, KC_KP_8, KC_KP_9,                        KC_F3,   KC_F5,  KC_F10,  KC_F12, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LALT, _______,  KC_SPC,     KC_ENT,   MO(3), KC_RALT
                                       //`--------------------------'  `--------------------------'
